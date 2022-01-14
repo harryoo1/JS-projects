@@ -1,0 +1,191 @@
+body{
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 0.1vmin solid #000;
+    height: 98vmin;
+    width: 98vmin;
+}
+.box{
+    float: left;
+    height: 9.57vmin;
+    width: 9.565vmin;
+    border: 0.1vmin solid #000;
+    text-align: center;
+    line-height: 9.601vmin;
+    font-size: 2.5vmin;
+    background-color: lightgreen;
+}
+#side{
+    position: absolute;
+    top: 1vmin;
+    left: 1vmin;
+    height: 25vmin;
+    width: 35vmin;
+    border: 0.2vmin solid #000;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 3.5vmin;
+}
+#cube_outer{
+    height: 8vmin;
+    width: 8vmin;
+    perspective: 30vmin;
+    margin: auto;
+}
+#cube_inner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.75s linear;
+}
+#cube_inner div{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+#front{
+    transform: translateZ(4vmin);
+}
+#back{
+    transform:rotateY(180deg) translateZ(4vmin);
+}
+#left{
+    transform: rotateY(-90deg) translateX(-4vmin);
+    transform-origin: left;
+}
+#right{
+    transform: rotateY(90deg) translateX(4vmin);
+    transform-origin: right;
+}
+#top{
+    transform: rotateX(-90deg) translateY(-4vmin);
+    transform-origin: top;
+}
+#bottom{
+    transform: rotateX(90deg) translateY(4vmin);
+    transform-origin: bottom;
+}
+#cube_inner div img{
+    height: 100.3%;
+    width: 100.3%;
+}
+.players{
+    position: absolute;
+    top: 90.9vmin;
+    left: 3vmin;
+    height: 4vmin;
+    width: 4vmin;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition-duration: 0.4s;
+    transition-property: margin;
+}
+.players:nth-child(1){
+    background-color: red;
+}
+.players:nth-child(2){
+    background-color: blue;
+}
+#main img{
+    position: absolute;
+}
+#l1{
+    transform: scaleX(0.35) scaleY(0.35) rotate(28deg);
+    top: 52.3vmin;
+    left: -11.5vmin;
+}
+#l2{
+    transform: scaleX(0.25) scaleY(0.4) rotate(31deg);
+    top: 43.5vmin;
+    left: 28.7vmin;
+}
+#l3{
+    transform: scaleX(0.25) scaleY(0.4) rotate(-35deg);
+    top: -15.7vmin;
+    left: -0.3vmin;
+}
+#l4{
+    transform: scaleX(0.25) scaleY(0.4) rotate(40deg);
+    top: -5.5vmin;
+    left: 38.5vmin;
+}
+#l5{
+    transform: scaleX(0.28) scaleY(0.35) rotate(-37deg);
+    top: 33.7vmin;
+    left: 9.3vmin;
+}
+#l6{
+    transform: scaleX(0.25) scaleY(0.4) rotate(-31deg);
+    top: 23.9vmin;
+    left: 48.5vmin;
+}
+#l7{
+    transform: scaleX(0.25) scaleY(0.4) rotate(-31deg);
+    top: 4.3vmin;
+    left: 58.3vmin;
+}
+#l8{
+    transform: scaleX(0.4) scaleY(0.25) rotate(60deg);
+    top: 9.7vmin;
+    left: 4.5vmin;
+}
+#l9{
+    transform: scaleX(0.17) scaleY(0.25) rotate(41deg);
+    top: -16vmin;
+    left: -20.8vmin;
+}
+#l10{
+    transform: scaleX(0.18) scaleY(0.3) rotate(-65deg);
+    top: 28.2vmin;
+    left: 52.2vmin;
+}
+#s1{
+    transform: scaleX(0.5) scaleY(0.45) rotate(10deg);
+    top: 6.7vmin;
+    left: 28vmin;
+}
+#s2{
+    transform: scaleX(0.28) scaleY(0.28);
+    top: 20.6vmin;
+    left: -12.7vmin;
+}
+#s3{
+    transform: scaleX(0.4) scaleY(0.3);
+    top: 12vmin;
+    left: 30.5vmin;
+}
+#s4{
+    transform: scaleX(0.75) scaleY(0.5) rotate(10deg);
+    top: 66vmin;
+    left: 22vmin;
+
+}
+#s5{
+    transform: scaleX(0.35) scaleY(0.39) rotate(-60deg);
+    top: 1vmin;
+    left: 33vmin;
+}
+#s6{
+    transform: scaleX(0.1) scaleY(0.2) rotate(45deg);
+    top: -22.5vmin;
+    left: -48vmin;
+}
+#s7{
+    transform: scaleX(0.6) scaleY(0.5) rotate(-107deg);
+    top: -1.5vmin;
+    left: 61.7vmin;
+}
+#s8{
+    transform: scaleX(0.2) scaleY(0.2) rotate(90deg);
+    top: 37.2vmin;
+    left: 36.2vmin;
+}

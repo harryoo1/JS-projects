@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>-->
+    <title>Drag N Drop</title>
+</head>
+
+<body>
+    <div class="modal" id="todo-form">
+        <div class="header">
+            <div class="title">Add a Task</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+            <input type="text" id="todo-input" onfocus="this.value=''">
+            <input type="submit" value="Add" id="todo-submit">
+        </div>
+    </div>
+    <div class="todo-container">
+        <div class="status" id="no_status">
+            <div class="text">No Status</div>
+            <button id="add_btn" data-target-modal="#todo-form">+ Add Todo</button>
+            <div class="todo" draggable="true">
+                Buy a Pizza
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <div class="status">
+            <div class="text">Not Started</div>
+        </div>
+        <div class="status">
+            <div class="text">In Progress</div>
+        </div>
+        <div class="status">
+            <div class="text">Completed</div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
